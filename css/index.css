@@ -97,3 +97,16 @@
       
   }
   
+
+
+.width-setting{
+    width: 750px;
+}
+
+@media screen and (max-width:800px) {
+    .width-setting{
+        width: 100%;
+    }
+    
+    
+}
