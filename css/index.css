@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  .cursor-animate {
+    position: relative;
+    animation: moveUpDown 2s ease-in-out infinite;
+  }
+  
+  @keyframes moveUpDown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .invisible-div {
+    opacity: 1; /* Initially invisible */
+    animation: fadeIn 1s ease-in-out infinite;
+  }
+  
+  @keyframes fadeIn {
+    0%,
+    100% {
+      opacity: 0; /* Start and end with 0 opacity */
+    }
+  
+    50% {
+      opacity: 1; /* Middle of the animation, fully visible */
+    }
+  }
+  
+  .glow {
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d6d303,
+        0 0 40px #d6d303, 0 0 50px #d6d303, 0 0 60px #d6d303, 0 0 70px #d6d303;
+    }
+  
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #d6d303, 0 0 40px #d6d303,
+        0 0 50px #d6d303, 0 0 60px #d6d303, 0 0 70px #d6d303, 0 0 80px #d6d303;
+    }
+  }
+  
+  .glow-2 {
+    animation: glow-2 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow-2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+        0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+  
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+        0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  
+  .mob-position {
+    position: relative;
+    bottom: 50%;
+    left: 20%;
+    width: 60%;
+  }
+  
+  @media screen and (max-width:700px) {
+      .mob-position{
+          width: 80%;
+      }
+      
+  }
+  
+  
+  .product-set{
+      width: 30%;
+  }
+  
+  
+  
+  @media screen and (max-width:700px) {
+      .product-set{
+          width: 80%;
+      }
+      
+  }
+  
