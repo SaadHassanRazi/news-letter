@@ -98,15 +98,3 @@
   }
   
 
-
-.width-setting{
-    width: 750px;
-}
-
-@media screen and (min-width:800px) {
-    .width-setting{
-        width: 100%;
-    }
-    
-    
-}
